@@ -1,0 +1,66 @@
+
+
+
+
+.texto-suave {
+    color: #67e7df;
+    font-weight: 700;
+}
+
+.franja {
+    padding: 26px 0;
+    background: #e6f7f5;
+}
+
+.franja p {
+    margin: 0;
+    color: #173d49;
+    font-weight: 700;
+}
+
+.franja i {
+    margin-right: 8px;
+    color: #078e92;
+}
+
+.pantalla {
+    border: 6px solid #0b324a;
+}
+
+.pantalla-titulo {
+    color: #088c8a;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.pantalla .texto-chico {
+    margin-bottom: 0;
+}
+
+.paso {
+    background: #154257;
+    border-color: #276379;
+}
+
+.paso h3, .paso p {
+    color: #ffffff;
+}
+
+.paso .numero {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 8px;
+    background: #12c9be;
+    color: #082a42;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nota-clara {
+    margin-top: 24px;
+    color: #b8dbe2;
+    font-size: 13px;
+}
+
+
+

@@ -1,0 +1,22 @@
+.caja-verde {
+    border-color: #a8e5df;
+    background: #eaf8f5;
+}
+
+.ejemplo {
+    margin-top: 25px;
+}
+
+.ejemplo figcaption {
+    color: #0a898a;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.ejemplo p:last-child {
+    margin-bottom: 0;
+}
+
+#uso .caja-azul li {
+    color: #ffffff;
+}

@@ -1,0 +1,38 @@
+.icono-texto {
+    margin-right: 6px;
+    color: #0aaea9;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario label {
+    font-weight: 700;
+}
+
+.formulario input, .formulario textarea {
+    padding: 12px;
+    border: 1px solid #c8dce3;
+    border-radius: 8px;
+    background: #ffffff;
+    font-family: "Nunito Sans", Arial, sans-serif;
+    font-size: 15px;
+}
+
+.formulario button {
+    margin-top: 12px;
+}
+
+.formulario button:disabled {
+    background: #a4c4c6;
+    border-color: #a4c4c6;
+    color: #24454d;
+    cursor: not-allowed;
+}
+
+.formulario .texto-chico {
+    margin-bottom: 0;
+}
