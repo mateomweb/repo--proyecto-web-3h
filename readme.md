@@ -1,5 +1,8 @@
 Actualización de EmprendeFlow
 
+cambios grandes guiados mediante la rubrica de evaluacion 
+
+
 EmprendeFlow es un proyecto escolar que presenta una herramienta para ordenar las ventas los gastos los costos y los productos de pequeños negocios
 
 La herramienta sigue en desarrollo y este sitio explica su propuesta
