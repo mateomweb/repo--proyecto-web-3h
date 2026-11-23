@@ -1,13 +1,67 @@
+:root {
+    --color-texto: rgb(24, 52, 73);
+    --color-blanco: rgb(255, 255, 255);
+    --color-primario: rgb(8, 42, 66);
+    --color-secundario: rgb(18, 201, 190);
+    --color-acento: rgb(10, 174, 169);
+    --color-texto-secundario: rgb(100, 126, 139);
+    --color-borde-cabecera: rgb(225, 235, 239);
+    --color-texto-menu: rgb(54, 84, 105);
+    --color-menu-activo: rgb(7, 139, 137);
+    --color-borde-menu-activo: rgb(15, 197, 186);
+    --color-boton-hover: rgb(125, 227, 221);
+    --color-borde-boton: rgb(126, 180, 191);
+    --color-boton-borde-hover: rgb(23, 78, 98);
+    --color-borde-aviso: rgb(57, 114, 131);
+    --color-fondo-aviso: rgb(21, 62, 83);
+    --color-texto-destacado: rgb(103, 231, 223);
+    --color-texto-portada: rgb(213, 228, 233);
+    --color-texto-pie-foto: rgb(201, 229, 234);
+    --color-titulo-pequeno: rgb(7, 142, 146);
+    --color-fondo-claro: rgb(241, 247, 249);
+    --color-titulo-sobre-azul: rgb(84, 223, 214);
+    --color-borde-caja: rgb(223, 234, 240);
+    --color-titulo-caja: rgb(11, 46, 68);
+    --color-texto-caja: rgb(83, 109, 125);
+    --color-fondo-caja-clara: rgb(242, 248, 250);
+    --color-fondo-mascota: rgb(233, 248, 246);
+    --color-borde-mascota: rgb(183, 233, 227);
+    --color-fondo-numeros: rgb(230, 246, 245);
+    --color-texto-numeros: rgb(9, 46, 69);
+    --color-fondo-pie: rgb(6, 31, 49);
+    --color-texto-pie: rgb(217, 232, 237);
+    --color-fondo-franja: rgb(230, 247, 245);
+    --color-texto-franja: rgb(23, 61, 73);
+    --color-borde-pantalla: rgb(11, 50, 74);
+    --color-titulo-pantalla: rgb(8, 140, 138);
+    --color-fondo-paso: rgb(21, 66, 87);
+    --color-borde-paso: rgb(39, 99, 121);
+    --color-texto-nota: rgb(184, 219, 226);
+    --color-borde-campo: rgb(200, 220, 227);
+    --color-fondo-deshabilitado: rgb(164, 196, 198);
+    --color-texto-deshabilitado: rgb(36, 69, 77);
+    --color-borde-caja-verde: rgb(168, 229, 223);
+    --color-fondo-caja-verde: rgb(234, 248, 245);
+    --color-titulo-ejemplo: rgb(10, 137, 138);
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    color: #183449;
-    background: #ffffff;
-    font-family: "Nunito Sans", Arial, sans-serif;
+    color: var(--color-texto);
+    background: var(--color-blanco);
     line-height: 1.7;
+}
+
+.textito {
+    font-family: "Nunito Sans", Arial, sans-serif;
+}
+
+.titulito {
+    font-family: "Poppins", Arial, sans-serif;
 }
 
 a {
@@ -22,18 +76,17 @@ img {
 
 h1, h2, h3 {
     margin-top: 0;
-    font-family: "Poppins", Arial, sans-serif;
     line-height: 1.25;
 }
 
 h1 {
     margin-bottom: 22px;
-    font-size: 45px;
+    font-size: 38px;
 }
 
 h2 {
     margin-bottom: 18px;
-    font-size: 32px;
+    font-size: 30px;
 }
 
 h3 {
@@ -45,352 +98,425 @@ p {
     margin-top: 0;
 }
 
-.contenedor {
+.contenedorcito, .barracita, .contenedorportada, .contenedordoble,
+.cajitafototexto, .contenedortriple, .contenedorpie,
+.contenedorcentrado, .cajitaderechos {
     width: 90%;
     max-width: 1140px;
     margin: 0 auto;
 }
 
-.cabecera {
-    background: #ffffff;
-    border-bottom: 1px solid #e1ebef;
+.cabecerita {
+    background: var(--color-blanco);
+    border-bottom: 1px solid var(--color-borde-cabecera);
 }
 
-.barra {
-    min-height: 92px;
+.barracita {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 18px;
+    min-height: 92px;
+    padding: 16px 0;
 }
 
-.logo img {
+.loguito img {
     display: block;
     width: 90px;
 }
 
-.menu {
+.menucito, .menucitopie {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 23px;
-     transition: transform 0.2s, border-color 0.2s ease;
+    gap: 18px;
 }
 
-.menu a {
+.menucito {
+    flex: 1 1 320px;
+    justify-content: center;
+    transition: transform 0.2s, border-color 0.2s ease;
+}
+
+.menucito:hover {
+    transform: translateY(-5px);
+}
+
+.menucito a {
     padding: 8px 0;
-    color: #365469;
+    color: var(--color-texto-menu);
     font-size: 14px;
-    font-weight: 700;
+    font-weight: bold;
 }
 
-.menu i {
-    margin-right: 5px;
-    color: #0aaea9;
-}
-.menu:hover{
+.menucito a:hover, .menucito .enlacitoactivo {
+    color: var(--color-menu-activo);
+    border-bottom: 2px solid var(--color-borde-menu-activo);
     transform: translateY(-5px);
 }
 
-.menu a:hover, .menu a.activo {
-    color: #078b89;
-    border-bottom: 2px solid #0fc5ba;
-    transform: translateY(-5px);
-}
-
-.boton {
+.botoncito, .miniboton, .botonborde {
     display: inline-block;
     padding: 12px 19px;
-    border: 2px solid #12c9be;
+    border: 2px solid var(--color-secundario);
     border-radius: 10px;
-    background: #12c9be;
-    color: #082a42;
+    background: var(--color-secundario);
+    color: var(--color-primario);
     font-family: "Nunito Sans", Arial, sans-serif;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: bold;
     text-align: center;
-    transition: transform 0.2s, border-color 0.2s ease;
     cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s ease;
 }
 
-.boton:hover {
-    background: #7de3dd;
-    border-color: #7de3dd;
+.botoncito:hover, .miniboton:hover {
+    background: var(--color-boton-hover);
+    border-color: var(--color-boton-hover);
     transform: translateY(-7px);
 }
 
-
-.boton-chico {
+.miniboton {
     padding: 9px 13px;
 }
 
-.boton-borde {
-    background: #082a42;
-    color: #ffffff;
-    border-color: #7eb4bf;
+.botonborde {
+    background: var(--color-primario);
+    color: var(--color-blanco);
+    border-color: var(--color-borde-boton);
 }
 
-.boton-borde:hover {
-    background: #174e62;
-    border-color: #7eb4bf;
+.botonborde:hover {
+    background: var(--color-boton-borde-hover);
+    transform: translateY(-7px);
 }
 
-.botones {
+.iconito {
+    display: block;
+    width: 27px;
+    height: 27px;
+    margin-bottom: 17px;
+    object-fit: contain;
+}
+
+.iconitomenu, .iconitochico, .iconitofranja {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    vertical-align: middle;
+    object-fit: contain;
+}
+
+.iconitochico {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+}
+
+.iconitofranja {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.botonera {
     display: flex;
-    gap: 12px;
     flex-wrap: wrap;
+    gap: 12px;
     margin-top: 25px;
 }
 
-.portada {
-    background: #082a42;
-    color: #ffffff;
+.portadita, .portadacortita {
+    background: var(--color-primario);
+    color: var(--color-blanco);
 }
 
-.portada-adentro {
-    min-height: 495px;
+.contenedorportada, .contenedordoble, .cajitafototexto, .doscajitas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 34px;
+}
+
+.contenedorportada > div, .contenedorportada > figure,
+.contenedordoble > section, .contenedordoble > div,
+.cajitafototexto > div, .cajitafototexto > figure,
+.doscajitas > article, .doscajitas > a {
+    flex: 1 1 340px;
+    min-width: 0;
+}
+
+.contenedorportada {
     align-items: center;
     padding: 45px 0;
 }
 
-.portada-corta .portada-adentro {
-    min-height: 420px;
-}
-
-.aviso {
+.avisito {
     display: inline-block;
     padding: 7px 13px;
-    border: 1px solid #397283;
+    border: 1px solid var(--color-borde-aviso);
     border-radius: 25px;
-    background: #153e53;
-    color: #67e7df;
+    background: var(--color-fondo-aviso);
+    color: var(--color-texto-destacado);
     font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.8px;
+    font-weight: bold;
 }
 
-.texto-portada {
-    color: #d5e4e9;
+.textitoportada {
+    color: var(--color-texto-portada);
     font-size: 17px;
 }
 
-.foto-portada, .foto-blanca {
+.fotitoportada, .fotitablanca {
     margin: 0;
     text-align: center;
 }
 
-.foto-portada img {
+.fotitoportada img {
     display: block;
     max-height: 370px;
-    object-fit: contain;
     margin: 0 auto;
+    object-fit: contain;
 }
 
-.foto-portada figcaption {
+.fotitoportada figcaption {
     margin-top: 8px;
-    color: #c9e5ea;
+    color: var(--color-texto-pie-foto);
     font-size: 13px;
 }
 
-.foto-blanca {
+.fotitablanca {
     padding: 18px;
     border-radius: 18px;
-    background: #ffffff;
+    background: var(--color-blanco);
 }
 
-.foto-blanca img {
+.fotitablanca img {
     max-height: 300px;
     object-fit: contain;
 }
 
-.seccion {
+.cajota, .cajotaclara, .cajotaazul, .cajotafinal, .cajotaazulfinal {
     padding: 66px 0;
 }
 
-.dos-columnas {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 34px;
-}
-
-.tres-columnas {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+.trescajitas, .contenedortriple {
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
-.cuatro-columnas {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 12px;
+.trescajitas > article, .contenedortriple > p {
+    flex: 1 1 300px;
+    min-width: 0;
 }
 
-.foto-y-texto {
+.cajitafototexto {
     align-items: center;
 }
 
-.centro {
+.centradito, .contenedorcentrado {
     text-align: center;
 }
 
-.centro p {
+.contenedorcentrado p {
     max-width: 740px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.titulo-pequeno {
+.minititulito {
     margin-bottom: 12px;
-    color: #078e92;
+    color: var(--color-titulo-pequeno);
     font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.8px;
+    font-weight: bold;
 }
 
-.intro {
+.entradita {
     max-width: 810px;
     margin-bottom: 29px;
     font-size: 17px;
 }
 
-.fondo-claro {
-    background: #f1f7f9;
+.cajotaclara {
+    background: var(--color-fondo-claro);
 }
 
-.fondo-azul {
-    background: #082a42;
-    color: #ffffff;
+.cajotaazul, .cajotaazulfinal {
+    background: var(--color-primario);
+    color: var(--color-blanco);
 }
 
-.fondo-azul .titulo-pequeno {
-    color: #54dfd6;
+.cajotaazul .minititulito {
+    color: var(--color-titulo-sobre-azul);
 }
 
-.caja {
+.cajita, .cajitaazul, .cajitaclara, .cajitaverde, .cajitaejemplo,
+.cajitaformulario, .cajitabuho, .cajitapantalla, .cajitapasito,
+.cajitamateo, .cajitaservicio, .cajitaclic {
     margin: 0;
     padding: 25px;
-    border: 1px solid #dfeaf0;
+    border: 1px solid var(--color-borde-caja);
     border-radius: 15px;
-    background: #ffffff;
+    background: var(--color-blanco);
 }
 
-.caja h3 {
-    color: #0b2e44;
+.cajita h3, .cajitaclara h3, .cajitaverde h3, .cajitapantalla h3,
+.cajitamateo h3, .cajitaservicio h3, .cajitaclic h3 {
+    color: var(--color-titulo-caja);
 }
 
-.caja p {
-    color: #536d7d;
+.cajita p, .cajitaclara p, .cajitaverde p, .cajitaejemplo p,
+.cajitamateo p, .cajitaservicio p, .cajitaclic p {
+    color: var(--color-texto-caja);
 }
 
-.caja-azul {
-    border-color: #082a42;
-    background: #082a42;
-    color: #ffffff;
+.cajitaazul {
+    border-color: var(--color-primario);
+    background: var(--color-primario);
+    color: var(--color-blanco);
 }
 
-.caja-azul h3, .caja-azul p {
-    color: #ffffff;
+.cajitaclara {
+    background: var(--color-fondo-caja-clara);
 }
 
-.caja-clara {
-    background: #f2f8fa;
-}
-
-.icono {
-    display: block;
-    margin-bottom: 17px;
-    color: #0aaea9;
-    font-size: 27px;
-}
-
-.servicio {
+.cajitaservicio, .cajitaclic {
     min-height: 195px;
 }
 
-.foto-buho {
-    text-align: center;
-    background: #e9f8f6;
+.cajitaclic {
+    display: block;
 }
 
-.foto-buho img {
+.cajitaclic:hover {
+    border-color: var(--color-acento);
+}
+
+.cajitabuho {
+    text-align: center;
+    background: var(--color-fondo-mascota);
+}
+
+.cajitabuho img {
     max-height: 350px;
     object-fit: contain;
 }
 
-.lista {
+.listita {
     padding-left: 23px;
     margin: 18px 0 26px;
 }
 
-.lista li {
+.listita li {
     margin-bottom: 10px;
-    padding-left: 4px;
 }
 
-.numeros {
+.dosnumeritos, .cuatronumeritos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 12px;
     margin: 20px 0;
 }
 
-.numeros p {
+.dosnumeritos p, .cuatronumeritos p {
     margin: 0;
     padding: 15px 12px;
     border-radius: 10px;
-    background: #e6f6f5;
+    background: var(--color-fondo-numeros);
 }
 
-.numeros small, .numeros strong {
+.dosnumeritos small, .dosnumeritos strong,
+.cuatronumeritos small, .cuatronumeritos strong {
     display: block;
 }
 
-.numeros strong {
-    color: #092e45;
+.dosnumeritos strong, .cuatronumeritos strong {
+    color: var(--color-texto-numeros);
     font-size: 20px;
 }
 
-.texto-chico {
-    color: #647e8b;
+.minitextito {
+    color: var(--color-texto-secundario);
     font-size: 13px;
 }
 
-.final p {
+.cajotafinal p, .cajotaazulfinal p {
     max-width: 720px;
 }
 
-.final .boton {
-    margin-top: 13px;
-}
-
-.pie {
-    padding: 28px 0;
-    background: #061f31;
-    color: #d9e8ed;
-}
-
-.pie-adentro {
+.preguntitas {
     display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.preguntita {
+    border: 1px solid var(--color-borde-caja);
+    border-radius: 10px;
+    background: var(--color-blanco);
+    color: var(--color-texto);
+}
+
+.preguntita summary {
+    padding: 18px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.respuestita {
+    padding: 0 20px 18px;
+}
+
+.respuestita p {
+    margin-bottom: 0;
+}
+
+.piecito {
+    padding: 28px 0;
+    background: var(--color-fondo-pie);
+    color: var(--color-texto-pie);
+}
+
+.contenedorpie {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 18px;
 }
 
-.pie p {
+.piecito p {
     margin: 0;
     font-size: 13px;
 }
 
-.pie .logo img {
+.piecito .loguito img {
     width: 75px;
     border-radius: 8px;
-    background: #ffffff;
+    background: var(--color-blanco);
 }
 
-.menu-pie {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 13px;
+.menucitopie {
     font-size: 13px;
 }
 
+.cajitaderechos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-borde-paso);
+    text-align: center;
+}
+
+.fotitomateo {
+    width: 64px;
+    height: 64px;
+    border: 2px solid var(--color-secundario);
+    border-radius: 50%;
+    object-fit: cover;
+}

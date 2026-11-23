@@ -1,66 +1,82 @@
-
-
-
-
-.texto-suave {
-    color: #67e7df;
-    font-weight: 700;
+.textitobrillante {
+    color: var(--color-texto-destacado);
+    font-weight: bold;
 }
 
-.franja {
+.franjita {
     padding: 26px 0;
-    background: #e6f7f5;
+    background: var(--color-fondo-franja);
 }
 
-.franja p {
+.franjita p {
     margin: 0;
-    color: #173d49;
-    font-weight: 700;
+    color: var(--color-texto-franja);
+    font-weight: bold;
 }
 
-.franja i {
-    margin-right: 8px;
-    color: #078e92;
+.cajitapantalla {
+    border: 6px solid var(--color-borde-pantalla);
 }
 
-.pantalla {
-    border: 6px solid #0b324a;
-}
-
-.pantalla-titulo {
-    color: #088c8a;
-    font-weight: 700;
+.titulopantallita {
     margin-bottom: 18px;
+    color: var(--color-titulo-pantalla);
+    font-weight: bold;
 }
 
-.pantalla .texto-chico {
-    margin-bottom: 0;
+.cajitapasito {
+    background: var(--color-fondo-paso);
+    border-color: var(--color-borde-paso);
+    color: var(--color-blanco);
 }
 
-.paso {
-    background: #154257;
-    border-color: #276379;
-}
-
-.paso h3, .paso p {
-    color: #ffffff;
-}
-
-.paso .numero {
+.numerito {
     display: inline-block;
     padding: 5px 14px;
     border-radius: 8px;
-    background: #12c9be;
-    color: #082a42;
+    background: var(--color-secundario);
+    color: var(--color-primario);
     font-size: 22px;
-    font-weight: 700;
+    font-weight: bold;
 }
 
-.nota-clara {
+.notita {
     margin-top: 24px;
-    color: #b8dbe2;
+    color: var(--color-texto-nota);
     font-size: 13px;
 }
 
+.cajotacirculos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 34px;
+}
 
+.circulito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 280px;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 26px;
+    border: 2px solid var(--color-secundario);
+    border-radius: 50%;
+    background: var(--color-fondo-mascota);
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+}
 
+.circulito p {
+    margin: 0;
+}
+
+.portadita {
+    background-image: url("../img/hero/fondito-hero.png");
+    background-size: cover;
+    background-position: center;
+}
