@@ -1,0 +1,82 @@
+.textitobrillante {
+    color: var(--color-texto-destacado);
+    font-weight: bold;
+}
+
+.franjita {
+    padding: 26px 0;
+    background: var(--color-fondo-franja);
+}
+
+.franjita p {
+    margin: 0;
+    color: var(--color-texto-franja);
+    font-weight: bold;
+}
+
+.cajitapantalla {
+    border: 6px solid var(--color-borde-pantalla);
+}
+
+.titulopantallita {
+    margin-bottom: 18px;
+    color: var(--color-titulo-pantalla);
+    font-weight: bold;
+}
+
+.cajitapasito {
+    background: var(--color-fondo-paso);
+    border-color: var(--color-borde-paso);
+    color: var(--color-blanco);
+}
+
+.numerito {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 8px;
+    background: var(--color-secundario);
+    color: var(--color-primario);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.notita {
+    margin-top: 24px;
+    color: var(--color-texto-nota);
+    font-size: 13px;
+}
+
+.cajotacirculos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 34px;
+}
+
+.circulito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 280px;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 26px;
+    border: 2px solid var(--color-secundario);
+    border-radius: 50%;
+    background: var(--color-fondo-mascota);
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.circulito p {
+    margin: 0;
+}
+
+.portadita {
+    background-image: url("../img/hero/fondito-hero.png");
+    background-size: cover;
+    background-position: center;
+}

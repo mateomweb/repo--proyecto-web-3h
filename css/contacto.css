@@ -1,0 +1,70 @@
+.cajitaformulario {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.parejitas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.campito, .campitosexo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+}
+
+.parejitas > .campito, .parejitas > .campitosexo {
+    flex: 1 1 210px;
+}
+
+.cajitaformulario label, .campitosexo legend {
+    font-weight: bold;
+}
+
+.cajitaformulario input, .cajitaformulario textarea, .cajitaformulario select {
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid var(--color-borde-campo);
+    border-radius: 8px;
+    background: var(--color-blanco);
+    color: var(--color-texto);
+    font-family: "Nunito Sans", Arial, sans-serif;
+    font-size: 15px;
+}
+
+.campitosexo {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.campitosexo legend {
+    margin-bottom: 6px;
+    padding: 0;
+}
+
+.opcioncitas {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.opcioncitas label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+}
+
+.opcioncitas input {
+    margin: 0;
+    padding: 0;
+}
+
+.cajitaformulario .minitextito {
+    margin-bottom: 0;
+}

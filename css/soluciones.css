@@ -1,0 +1,42 @@
+.cajitaverde {
+    border-color: var(--color-borde-caja-verde);
+    background: var(--color-fondo-caja-verde);
+}
+
+.cajitaejemplo {
+    margin-top: 25px;
+}
+
+.cajitaejemplo figcaption {
+    color: var(--color-titulo-ejemplo);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#uso .cajitaazul li {
+    color: var(--color-blanco);
+}
+
+.casitos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.casitos > .cajita {
+    flex: 1 1 450px;
+    min-width: 0;
+}
+
+.fotitacasito {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 18px;
+    border: 1px solid var(--color-borde-caja);
+    border-radius: 10px;
+}
+
+.datitocasito {
+    font-size: 14px;
+}

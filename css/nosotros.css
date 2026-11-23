@@ -1,0 +1,38 @@
+.cajitabuho {
+    border-color: var(--color-borde-mascota);
+}
+
+#compromiso .cajita {
+    min-height: 215px;
+}
+
+#identidad .botoncito {
+    margin-top: 12px;
+}
+
+.cajitamateo {
+    max-width: 850px;
+}
+
+.cajitamateo p {
+    margin-bottom: 12px;
+}
+
+.cajitamateo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+}
+
+.cajitamateo > div {
+    flex: 1 1 260px;
+    min-width: 0;
+}
+
+.fotitoperfil {
+    display: block;
+    width: 160px;
+    height: auto;
+    border-radius: 10px;
+}
